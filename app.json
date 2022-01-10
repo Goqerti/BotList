@@ -1,0 +1,15 @@
+{
+	"name": "Bot list",
+	"description": "@Sirvhan Tərəfindən kodlanan bot list",
+	"repository": "https://github.com/Goqerti/botlist",
+	"env": {
+		"BOT_TOKEN": {
+			"description": "@BotFather dan alınan Bot Token girin."
+                   }
+	},
+	"buildpacks": [
+		{
+			"url": "heroku/nodejs"
+		}
+	]
+}
