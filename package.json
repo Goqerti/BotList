@@ -1,5 +1,5 @@
 {
-  "name": "etiraf",
+  "name": "botlist",
   "version": "1.0.0",
   "description": "",
   "main": "bot.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goqerti/crazybots.git"
+    "url": "git+https://github.com/goqerti/botlist.git"
   },
   "keywords": [],
   "author": "Sirvhan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goqerti/crazybots/issues"
+    "url": "https://github.com/goqerti/botlist/issues"
   },
-  "homepage": "https://github.com/goqerti/crazybots#readme",
+  "homepage": "https://github.com/goqerti/botlist#readme",
   "dependencies": {
     "telegraf": "^4.4.1"
   }
