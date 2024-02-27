@@ -9,12 +9,12 @@ const bot = new Telegraf(config.token)
 bot.start(ctx=>{
     bot.telegram.sendMessage(
         ctx.chat.id,
-        "👨🏻 Salam!\n\nSizin komanda adı Komandasının hazırladığı botları bir botda cəmləyən botam.İstədiyiniz bot haqqında burdan baxa bilər, qrupunuza qata bilər və başlada bilərsiniz",
+        "Salam, 21 bir-birindən fərqli kurslarla dolu olan Udemy Kurs paketi ilə maraqlandığını gördük. 😎Əgər Sadəcə evdən işləyərək pul qazandıracaq Bacarıqlar öyrənmək istəyirsənsə, o təklif indi ayağına gəldi.\n⚡️Heç bir Udemy hesabına ehtiyac yoxdur.\nBir dəfə ödəniş et və Ömürlük Sənin olsun!\n💵Videoları izləmək üçün sadəcə Telegram hesabının olması yetərlidir.\n\nDaha ƏTRAFLI MƏLUMAT üçün\n@asitlavanik hesabı\nilə əlaqə saxlayarsınız ✅",
         {
             reply_markup: {
                 inline_keyboard: [
-                    [{text: "Botlarımız 👨🏻‍💻",callback_data: "bot"},{text: "Haqqımızda ℹ",callback_data: "haqqimizda"}],
-                    [{text: "Kanalımız 🇦🇿",url: "https://t.me/sizinkanal"}]
+                    [{text: "Udemy Paketlərimiz 🔮",callback_data: "bot"},{text: "Haqqımızda",callback_data: "haqqimizda"}],
+                    [{text: "ƏLAQƏ ☎️",url: "https://t.me/asitlavanik"}]
                 ]
             }
         }
@@ -23,12 +23,12 @@ bot.start(ctx=>{
 bot.action("haqqimizda",ctx=>{
     bot.telegram.sendMessage(
         ctx.chat.id,
-        "Biz Sizin komanda adı Komandası olaraq sizlər üçün, yeni botlar hazırlayır, hazırladığı bot'larını təkminləşdirib yeni güncəlləmələr hazırlayır✅\n\nGizlilik haqqında məlumat almaq üçün aşağıdakı buttona klik et🛎",
+        "Udemy Paketini 1 ay ərzində\n40 - dan çox satışı olunmuşdur\nyəni ki, sizdə bu Paket sayəsində\nVirtualdan pul qazanmayı öyrənə bilərsiniz.\n\nQEYD: sizdə belə botların olmasını,\nqurdurmasını istəyirsinizsə aşağıdakı\nBOTLARIN QURULMASI buttonuna\nklik edə bilərsiniz ✅",
         {
             reply_markup: {
                 inline_keyboard: [
-                    [{ text: "🛎 Gizlilik", callback_data: "gizlilik" }],
-                    [{ text: "👨🏻 Ana Səhifə", callback_data: "yenidenstart" }],
+                    [{ text: "BOTLARIN QURULMASI 👾", callback_data: "gizlilik" }],
+                    [{ text: "🏠 Ana Səhifə", callback_data: "yenidenstart" }],
                 ]
             }
         }
@@ -37,12 +37,12 @@ bot.action("haqqimizda",ctx=>{
 bot.action("gizlilik",ctx=>{
     bot.telegram.sendMessage(
         ctx.chat.id,
-        "Botlarımızdan istifadə edənlərdə çox yaxşı bilirki botlarımız tamamilə güvənlidir✅\nBiz yalnız sizlər üçün işləyirik heç bir federasiya yaxud birləşmə ilə düşmən deyilik yaxud bundan sonrada heçkimlə düşmən olmuyacıq✅\nBizim botlarda qrup sıfırlama yaxud başqa qruplara ziyan verici hərəkətlər görə bilmərsiniz və görməyəcəksiniz🛎\n\nSizlərdən aldığımız məlumatlar hərkəsin əldə edəcəyi məlumatlardı🙂\nℹ CHAT İD\nℹ USER İD",
+        "Sizdə tam güvənli şəkildə\nŞəxsi Bot və yaxud\nQrupunuz üçün Bot\nQurdurmaq istəyirsinizsə aşağıdakı\nƏLAQƏ buttonuna Klik edin ",
         {
          reply_markup: {
                 inline_keyboard: [
-                    [{ text: "👨🏻 Ana Səhifə", callback_data: "yenidenstart" }],
-                    [{ text: "Kanalımız✅", url: "https://t.me/sizinkanal" }],
+                    [{ text: "🏠 Ana Səhifə", callback_data: "yenidenstart" }],
+                    [{ text: "ƏLAQƏ ☎️", url: "https://t.me/The_ferid" }],
                 ]
             }
         }
@@ -51,12 +51,12 @@ bot.action("gizlilik",ctx=>{
 bot.action("yenidenstart",ctx=>{
     bot.telegram.sendMessage(
         ctx.chat.id,
-        "👨🏻 Salam!\n\nMən Crazy Komandasının hazırladığı botları bir botda cəmləyən botam.İstədiyiniz bot haqqında burdan baxa bilər, qrupunuza qata bilər və başlada bilərsiniz.",
+        "Salam, 21 bir-birindən fərqli kurslarla dolu olan Udemy Kurs paketi ilə maraqlandığını gördük. 😎Əgər Sadəcə evdən işləyərək pul qazandıracaq Bacarıqlar öyrənmək istəyirsənsə, o təklif indi ayağına gəldi.\n⚡️Heç bir Udemy hesabına ehtiyac yoxdur.\nBir dəfə ödəniş et və Ömürlük Sənin olsun!\n💵Videoları izləmək üçün sadəcə Telegram hesabının olması yetərlidir.\n\nDaha ƏTRAFLI MƏLUMAT üçün\n@asitlavanik hesabı\nilə əlaqə saxlayarsınız ✅",
         {
             reply_markup: {
                 inline_keyboard: [
-                    [{text: "Botlarımız 👨🏻‍💻",callback_data: "bot"},{text: "Haqqımızda ℹ",callback_data: "haqqimizda"}],
-                    [{text: "Kanalımız 🇦🇿",url: "https://t.me/sizinkanal"}]
+                    [{text: "Udemy Paketlərimiz 🔮",callback_data: "bot"},{text: "Haqqımızda",callback_data: "haqqimizda"}],
+                    [{text: "ƏLAQƏ ☎️",url: "https://t.me/asitlavanik"}]
                 ]
             }
         }
@@ -66,12 +66,12 @@ bot.action("yenidenstart",ctx=>{
 bot.action("bot",ctx=>{
     bot.telegram.sendMessage(
         ctx.chat.id,
-        "🤖 Hansı bot haqqında məlumat almaq istəyirsiniz?",
+        "Hansı Paketi axtarırsınız? 🔮",
         {
             reply_markup: {
                 inline_keyboard: [
-                    [{text: "🎮 Sizin oyun bot adı",callback_data: "game"},{text: "🇦🇿 Sizin Music bot",callback_data: "music"}],
-                    [{text: "Kanalımız 🇦🇿",url: "https://t.me/sizinkanal"}]
+                    [{text: "Nirvana Premium",callback_data: "game"},{text: "The Real World və İman Gandzi bütün Kursları",callback_data: "music"}],
+                    [{text: "ƏLAQƏ ☎️",url: "https://t.me/asitlavanik"}]
                 ]
             }
         }
@@ -80,12 +80,12 @@ bot.action("bot",ctx=>{
 bot.action("music",ctx=>{
     bot.telegram.sendMessage(
         ctx.chat.id,
-        "Sizin Music sizlərə qruplarınızda rahat və sürətli musiqi dinləməyə kömək edir✅\n\nƏlavə məlumat üçün kömək buttonuna klik edin.",
+        "Paketə Daxildir\n\nKripto Valyuta, Traderlik, SMM,\nMətnyazarlığı, Dropshipping və daha çoxu\nNirvana Premium Paketi alana bu paket hədiyyə🥳",
         {
             reply_markup: {
                 inline_keyboard: [
-                    [{text: "👨🏻 Ana Səhifə",callback_data: "yenidenstart"},{text: "Kömək ℹ",url: "https://t.me/sizinbotadı?start"}],
-                    [{text: "Bot'u qruplarınıza Əlavə edin✅",url: "https://t.me/sizinbotadı?startgroup=a"}]
+                    [{text: "🏠 Ana Səhifə",callback_data: "yenidenstart"},
+                    [{text: "ƏLAQƏ ☎️",url: "https://t.me/asitlavanik"}]
                 ]
             }
         }
@@ -94,12 +94,12 @@ bot.action("music",ctx=>{
 bot.action("game",ctx=>{
     bot.telegram.sendMessage(
         ctx.chat.id,
-        "SİZİN BOT ADI ilə qruplarınızda maraqlı oyun oynaya bilərsiniz✅\n\nƏlavə məlumat üçün kömək buttonuna klik edin.",
+        "Paketə Daxildir\n\n1. Dropshipping A-dan Z-yə ilk satış.✅\n2. Amazon FBA✅\n3. Kripto, Bitcoin, Blockchain sistemləri (giriş)✅\n4. Finansal Analize giriş.(Maliyyə analizi)✅\n5. Birja, Kripto, Forex texniki analiz✅\n6. Forex Qazandıran Alım-Satım✅\n7. Google Gsuite✅\n8. Peşəkar Digital Marketing✅\n9. Digital Satış - 3 kurs birdən✅\n10. Google Analytics✅ \n11. Google Adwords öyrən✅\n12. İnstagramda Uğurlu Olmaq✅\n13. Youtuber Seti✅\n14. After Effect✅\n15. Adobe Premiere✅\n16. CorelDraw öyrən✅\n17. Adobe PhotoShop✅ (effektlər necə hazırlanır.)✅\n18. Adobe İllustrator✅\n19. Microsoft Excell✅\n20. Microsoft Word✅\n21. Mühasibatlıq-Əsas nüanslar.✅\n\nALMAQ İSTƏYƏN ŞƏXSLƏR\nƏLAQƏ BUTTONUNA KEÇİD EDƏ BİLƏR",
         {
             reply_markup: {
                 inline_keyboard: [
-                    [{text: "👨🏻 Ana Səhifə",callback_data: "yenidenstart"},{text: "Kömək ℹ",url: "https://t.me/sizinbotadı?start"}],
-                    [{text: "Bot'u qruplarınıza Əlavə edin✅",url: "https://t.me/sizinbotadı?startgroup=a"}]
+                    [{text: "🏠 Ana Səhifə",callback_data: "yenidenstart"},
+                    [{text: "ƏLAQƏ ☎️",url: "https://t.me/asitlavanik"}]
                 ]
             }
         }
