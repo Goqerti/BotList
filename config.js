@@ -1,5 +1,5 @@
 module.exports = ({
 
-	token: "SİZİN BOT TOKEN BURAYA GƏLƏCƏK",
+	token: "6328093163:AAHOKzMvaEHs6znJxCFA9IYaWypdkbnYK-4",
     
 });
